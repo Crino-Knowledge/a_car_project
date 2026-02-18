@@ -2,21 +2,17 @@
 
 ## 文件列表
 
-- `supplier-portal.part_aa` - 项目分卷压缩包(第一卷)
+- `supplier-portal.zip` - 项目压缩包(约71KB)
 
 ## 解压方法
 
-将所有分卷文件下载到同一目录后，执行以下命令合并并解压：
+下载 `supplier-portal.zip` 后解压即可：
 
 ```bash
-# 合并分卷
-cat supplier-portal.part_* > supplier-portal.tar
-
 # 解压
-tar -xvf supplier-portal.tar
+unzip supplier-portal.zip
 
 # 安装依赖
-cd supplier-portal
 npm install
 
 # 启动开发服务器
