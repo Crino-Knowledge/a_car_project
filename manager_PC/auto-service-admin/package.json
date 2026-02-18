@@ -1,0 +1,36 @@
+{
+  "name": "auto-service-admin",
+  "version": "1.0.0",
+  "description": "汽服报价系统后台管理端",
+  "private": true,
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "preview": "umi preview",
+    "setup": "umi setup",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "umi test"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.3.0",
+    "@ant-design/pro-components": "^2.7.0",
+    "antd": "^5.14.0",
+    "axios": "^1.6.7",
+    "echarts": "^5.5.0",
+    "echarts-for-react": "^3.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "umi": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@umijs/lint": "^4.3.0",
+    "@umijs/plugins": "^4.3.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
