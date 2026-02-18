@@ -1,0 +1,157 @@
+@use './variables.scss' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  color: $text-primary;
+  background-color: $bg-page;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $text-placeholder;
+  border-radius: 4px;
+
+  &:hover {
+    background: $text-secondary;
+  }
+}
+
+// 通用类
+.text-primary {
+  color: $primary-color !important;
+}
+
+.text-success {
+  color: $success-color !important;
+}
+
+.text-warning {
+  color: $warning-color !important;
+}
+
+.text-danger {
+  color: $danger-color !important;
+}
+
+.text-secondary {
+  color: $text-secondary !important;
+}
+
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+.bg-success {
+  background-color: $success-color !important;
+}
+
+// 页面容器
+.page-container {
+  padding: $spacing-lg;
+  background: $bg-page;
+  min-height: calc(100vh - #{$header-height});
+}
+
+// 卡片样式
+.card {
+  background: $bg-card;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-sm;
+  border: 1px solid $border-color;
+}
+
+// 状态标签
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+
+  &.status-pending {
+    background: rgba($info-color, 0.1);
+    color: $info-color;
+  }
+
+  &.status-won {
+    background: rgba($success-color, 0.1);
+    color: $success-color;
+  }
+
+  &.status-lost {
+    background: rgba($text-secondary, 0.1);
+    color: $text-secondary;
+  }
+
+  &.status-new {
+    background: rgba($primary-color, 0.1);
+    color: $primary-color;
+  }
+
+  &.status-urgent {
+    background: rgba($danger-color, 0.1);
+    color: $danger-color;
+  }
+}
+
+// 动画
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-enter-from {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.slide-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}

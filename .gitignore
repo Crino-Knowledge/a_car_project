@@ -153,8 +153,6 @@
 **/android/**/flutter_*.json
 **/web/.dart_tool/
 **/web/build/
-**/.flutter-plugins
-**/.flutter-plugins-dependencies
 
 # Taro/WeApp
 dist/
@@ -178,3 +176,6 @@ project.private.config.json
 *.lz
 *.lzma
 *.iso
+
+# Vite cache
+.vite/
