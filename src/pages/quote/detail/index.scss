@@ -1,0 +1,121 @@
+/* 报价详情样式 */
+.page-quote-detail {
+  min-height: 100vh;
+  background: #F5F5F5;
+  padding-bottom: 120px;
+}
+
+.error-state {
+  text-align: center;
+  padding: 100px 48px;
+  font-size: 32px;
+  color: #999999;
+}
+
+.section {
+  background: #FFFFFF;
+  padding: 24px;
+  margin: 24px;
+  border-radius: 16px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 24px;
+  }
+}
+
+.price-card {
+  background: linear-gradient(135deg, #FFF7E6, #FFFFFF);
+  border: 1px solid #FFD591;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+
+  &__label {
+    display: block;
+    font-size: 26px;
+    color: #666666;
+    margin-bottom: 8px;
+  }
+
+  &__value {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    color: #FF4D4F;
+  }
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+
+  &__label {
+    font-size: 28px;
+    color: #666666;
+  }
+
+  &__value {
+    font-size: 28px;
+    color: #333333;
+    font-weight: 500;
+  }
+}
+
+.description {
+  font-size: 28px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  background: #FFFFFF;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.confirm-btn {
+  width: 100%;
+  height: 88px;
+  background: linear-gradient(135deg, #1677FF, #4096FF);
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 600;
+  border-radius: 44px;
+  border: none;
+}
+
+.confirm-content {
+  text-align: center;
+
+  text {
+    display: block;
+  }
+
+  .confirm-price {
+    margin-top: 16px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #FF4D4F;
+  }
+}

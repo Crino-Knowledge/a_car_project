@@ -1,0 +1,159 @@
+/* 采购清单列表样式 */
+.page-list {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #F5F5F5;
+}
+
+/* 标签栏 */
+.tabs {
+  display: flex;
+  background: #FFFFFF;
+  padding: 0 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  &__item {
+    flex: 1;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    font-size: 28px;
+    color: #666666;
+    position: relative;
+
+    &--active {
+      color: #1677FF;
+      font-weight: 600;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 48px;
+        height: 4px;
+        background: #1677FF;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+/* 列表容器 */
+.list-container {
+  flex: 1;
+  padding: 24px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 采购卡片 */
+.purchase-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 24px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__order-no {
+    font-size: 24px;
+    color: #999999;
+  }
+
+  &__body {
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 12px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__brand,
+  &__spec {
+    font-size: 26px;
+    color: #666666;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #F0F0F0;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__time {
+    font-size: 24px;
+    color: #999999;
+  }
+
+  &__quote-count {
+    font-size: 24px;
+    color: #1677FF;
+    background: rgba(22, 119, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 12px;
+  }
+
+  &__budget {
+    font-size: 32px;
+    font-weight: 600;
+    color: #FF4D4F;
+  }
+}
+
+/* 加载更多 */
+.load-more,
+.no-more {
+  text-align: center;
+  padding: 32px;
+  font-size: 24px;
+  color: #999999;
+}
+
+/* 发布按钮 */
+.fab {
+  position: fixed;
+  right: 32px;
+  bottom: 48px;
+  width: 112px;
+  height: 112px;
+  background: linear-gradient(135deg, #1677FF, #4096FF);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(22, 119, 255, 0.4);
+
+  &__icon {
+    font-size: 56px;
+    color: #FFFFFF;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,51 @@
+/* 状态标签样式 */
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  /* 尺寸 */
+  &--small {
+    padding: 4px 8px;
+    font-size: 20px;
+  }
+
+  &--default {
+    padding: 6px 12px;
+    font-size: 24px;
+  }
+
+  &--large {
+    padding: 8px 16px;
+    font-size: 28px;
+  }
+
+  /* 状态颜色 */
+  &.status-primary {
+    background-color: rgba(22, 119, 255, 0.1);
+    color: #1677FF;
+  }
+
+  &.status-success {
+    background-color: rgba(82, 196, 26, 0.1);
+    color: #52C41A;
+  }
+
+  &.status-warning {
+    background-color: rgba(250, 173, 20, 0.1);
+    color: #FAAD14;
+  }
+
+  &.status-error {
+    background-color: rgba(255, 77, 79, 0.1);
+    color: #FF4D4F;
+  }
+
+  &.status-default {
+    background-color: rgba(153, 153, 153, 0.1);
+    color: #999999;
+  }
+}

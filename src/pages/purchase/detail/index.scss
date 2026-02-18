@@ -1,0 +1,209 @@
+/* 采购详情样式 */
+.page-detail {
+  min-height: 100vh;
+  background: #F5F5F5;
+  padding-bottom: 120px;
+}
+
+.detail-content {
+  padding: 24px;
+}
+
+.error-state {
+  text-align: center;
+  padding: 100px 48px;
+  font-size: 32px;
+  color: #999999;
+}
+
+.section {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333333;
+  }
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+
+  &__label {
+    font-size: 28px;
+    color: #666666;
+    flex-shrink: 0;
+    width: 160px;
+  }
+
+  &__value {
+    flex: 1;
+    font-size: 28px;
+    color: #333333;
+    text-align: right;
+
+    &--price {
+      color: #FF4D4F;
+      font-weight: 600;
+    }
+  }
+}
+
+/* 排序按钮 */
+.sort-btns {
+  display: flex;
+  gap: 16px;
+}
+
+.sort-btn {
+  padding: 8px 16px;
+  font-size: 24px;
+  color: #666666;
+  background: #F5F5F5;
+  border-radius: 8px;
+
+  &--active {
+    color: #1677FF;
+    background: rgba(22, 119, 255, 0.1);
+  }
+}
+
+.empty-quotes {
+  text-align: center;
+  padding: 48px;
+  font-size: 28px;
+  color: #999999;
+}
+
+/* 报价卡片 */
+.quote-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quote-card {
+  background: #FAFAFA;
+  border-radius: 12px;
+  padding: 20px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__supplier {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+  }
+
+  &__body {
+    margin-bottom: 16px;
+  }
+
+  &__price {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FF4D4F;
+    margin-bottom: 12px;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    text {
+      font-size: 24px;
+      color: #666666;
+    }
+  }
+
+  &__footer {
+    padding-top: 16px;
+    border-top: 1px solid #E5E5E5;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 72px;
+    font-size: 28px;
+    border-radius: 36px;
+    border: none;
+
+    &--primary {
+      background: #1677FF;
+      color: #FFFFFF;
+    }
+  }
+
+  &__contact {
+    padding-top: 16px;
+    border-top: 1px solid #E5E5E5;
+
+    text {
+      display: block;
+      font-size: 26px;
+      color: #333333;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+/* 底部操作 */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  background: #FFFFFF;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.bottom-btn {
+  width: 100%;
+  height: 88px;
+  background: linear-gradient(135deg, #1677FF, #4096FF);
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 600;
+  border-radius: 44px;
+  border: none;
+}
+
+/* 确认弹窗内容 */
+.confirm-content {
+  text-align: center;
+
+  text {
+    display: block;
+  }
+
+  .confirm-price {
+    margin-top: 16px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #FF4D4F;
+  }
+}

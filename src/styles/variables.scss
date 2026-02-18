@@ -1,0 +1,45 @@
+/* 样式变量 */
+
+/* 主色调 */
+$primary-color: #1677FF;
+$primary-color-light: #4096FF;
+$primary-color-dark: #0958D9;
+
+/* 状态颜色 */
+$success-color: #52C41A;
+$warning-color: #FAAD14;
+$error-color: #FF4D4F;
+$info-color: #1677FF;
+
+/* 中性色 */
+$text-color: #333333;
+$text-color-secondary: #666666;
+$text-color-muted: #999999;
+$border-color: #E5E5E5;
+$background-color: #F5F5F5;
+$white: #FFFFFF;
+
+/* 字体大小 */
+$font-size-xs: 20px;
+$font-size-sm: 24px;
+$font-size-base: 28px;
+$font-size-lg: 32px;
+$font-size-xl: 36px;
+$font-size-xxl: 40px;
+
+/* 间距 */
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-base: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
+
+/* 圆角 */
+$border-radius-sm: 4px;
+$border-radius-base: 8px;
+$border-radius-lg: 12px;
+$border-radius-round: 999px;
+
+/* 阴影 */
+$box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+$box-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);

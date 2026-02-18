@@ -1,0 +1,9 @@
+module.exports = {
+  extends: ['taro/react'],
+  rules: {
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': 'warn'
+  }
+}
